@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="SSMMM" />
+        <module name="ssmmm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SSMMM" target="1.5" />
+      <module name="ssmmm" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

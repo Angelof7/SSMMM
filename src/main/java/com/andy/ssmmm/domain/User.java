@@ -1,5 +1,8 @@
 package com.andy.ssmmm.domain;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 /**
  * Created by andy on 16/6/27.
  */
@@ -32,12 +35,17 @@ public class User {
         this.userPassword = userPassword;
     }
 
+//    @Override
+//    public String toString() {
+//        return "User{" +
+//                "userId=" + userId +
+//                ", userName='" + userName + '\'' +
+//                ", userPassword='" + userPassword + '\'' +
+//                '}';
+//    }
+
     @Override
     public String toString() {
-        return "User{" +
-                "userId=" + userId +
-                ", userName='" + userName + '\'' +
-                ", userPassword='" + userPassword + '\'' +
-                '}';
+        return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
     }
 }
